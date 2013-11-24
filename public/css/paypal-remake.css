@@ -1,0 +1,384 @@
+body {
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: "Helvetica Neue";
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 500;
+}
+
+.navy-blue-backdrop {
+	background-color: #223148;
+	color: white;
+}
+
+.dark-blue-backdrop {
+	background-color: #111723;
+	color: white;	
+}
+
+.white-backdrop {
+	background-color: white;
+	color: #333;
+}
+
+.banner {
+	width: 100%;
+	padding: 1em 8%;
+	box-sizing: border-box;	
+}
+
+.nav {
+	padding: .75em 0;
+	border-bottom: 1px solid #505F76;
+	color: #6A7892;
+}
+
+.nav div {
+	display: inline-block;
+
+}
+
+.logo {
+	font-style: italic;
+	font-weight: 700;
+	font-size: 2em;
+	padding-right: 2.4em;
+	color: white;
+}
+
+.search {
+	position: relative;
+	color: #505F76;
+	padding-left: 24px;
+}
+
+.search input[type="text"] {
+	background-image: url(../images/mag_glass.png);
+	background-color: transparent;
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	border: none;
+	font: inherit;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #505F76;
+	display: inline-block;
+	float:left;
+	padding: 1px 1px 1px 29px;
+	width: 20em;
+}
+
+/* this is so silly - see http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #505F76;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #505F76;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #505F76;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #505F76;
+}
+
+.tools {
+	float: right;
+	vertical-align: bottom;
+	white-space: nowrap;
+	position: relative;
+	margin-top: 1em;
+}
+
+.notification-icon {
+	width: 16px;
+	height: 16px;
+	margin-top: 4px;
+}
+
+/* some extra fluff for the circular avatar */
+.circle img {
+	border: 2px solid rgba(255,255,255,0.4); /* shamelessly stolen from http://codepen.io/bradenhamm/pen/yDuka */
+	transition: linear 0.25s;
+}
+
+/* shamelessly stolen from http://codepen.io/bradenhamm/pen/yDuka */
+.circle img:hover {
+  transition: ease-out 0.2s;
+  border: 2px solid rgba(255,255,255,0.8);
+  -webkit-transition: ease-out 0.2s;
+}
+
+.tool-unit {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0 1em;
+	border-right: 1px solid #505F76;
+}
+
+.last-tool {
+	border-right: none;
+}
+
+.dashboard-top {
+	padding: 3em 0 0.5em;
+	display: block;
+	color: #6A7892;
+}
+
+.balance-widget {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.tip-widget {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.tip-widget p {
+	margin-top: 0.5em;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.tip-widget a {
+	border-bottom: 1px solid #6A7892;
+	padding-bottom: 1px;
+}
+
+.clear {
+	display: block;
+	float: none;
+	clear: both;
+}
+
+.dashboard-widget label {
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	clear: both;
+	float: none;
+	display: block;
+	color: #45597A;
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+.big-amount {
+	position: relative;
+	font-weight: 100;
+	font-size: 5em;
+	color: white;
+	padding-left: 0.35em;
+}
+
+.currency-symbol {
+	position: absolute;
+	font-size: 0.5em;
+	left: 0;
+}
+
+.main {
+	margin-top: 2em;
+}
+
+.activity-column {
+	width: 80%;
+	float: left;
+	padding-right: 2em;
+	box-sizing: border-box;
+}
+
+.activity-column h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.date-widget {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 4em;
+}
+
+.date-widget input {
+	border-radius: .25em;
+	border: 1px solid #CCC;
+	padding: .5em 1em;
+	font-size: 16px;
+	width: 9em;
+	margin: 0 .8em;
+	text-align: right;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue";
+	background-image: url(../images/calendar.png);
+	background-repeat: no-repeat;
+	background-position: .6em .6em;
+	background-size: 16px 16px;
+
+}
+
+.activity-column table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.activity-column th {
+	white-space: no-wrap;
+}
+
+.activity-column td, .activity-column th {
+	text-align: left;
+	padding: 1em 1em 1em 0;
+}
+
+.activity-column tr {
+	border-bottom: 1px solid #CCC;
+}
+
+.status-icon {
+	width: 24px;
+	height: 24px;
+	margin: auto;
+	display: block;
+}
+
+.positive-currency {
+	color: #007300;
+}
+
+.negative-currency {
+	color: #A60000;
+}
+
+.navigation-column h2 {
+	margin-top: 0;
+}
+
+.navigation-column {
+	width: 20%;
+	float: left;
+}
+
+.main a {
+	color: #3394C7;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.navigation-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation-column li {
+	margin-bottom: .3em;
+}
+
+.navigation-column .links {
+	border-left: 1px solid #ccc;
+	padding-left: 2em;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+
+}
+
+.action-link {
+	width: 25%;
+	float: left;
+	display: inline-block;
+	font-weight: 600;
+	padding-left: 50px;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	color: #B5C0D4;
+	background-repeat: no-repeat;
+	background-size: 1.2em 1.2em;
+	background-position: .5em .15em;
+}
+
+.send-money-action {
+	background-image: url(../images/icon-send-money.png);
+}
+
+.request-money-action {
+	background-image: url(../images/icon-request-money.png);
+}
+
+.withdraw-money-action {
+	background-image: url(../images/icon-withdraw-money.png);
+	background-size: 1em 1em;
+}
+
+.products-services-action {
+	background-image: url(../images/icon-products-and-services.png);
+	background-size: .9em .9em;
+	background-position: .5em .25em;
+}
+
+.footer {
+	text-align: center;
+	font-size: 14px;
+}
+.footer ul {
+	list-style-type: none;
+	padding: 0;
+	display: inline-block;
+	margin-bottom: 0;
+
+}
+
+.footer li {
+	display: inline-block;
+	padding: 0 1em;	
+}
+
+.footer li a {
+	font-weight: 400;
+	color: #3394C7;
+}
+
+.copyright-notice {
+	color: #CCC;
+}
+
+
+/* getting bored */
+.right-floating {
+	float: right;
+}
+
+th.center-align {
+	text-align: center;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+

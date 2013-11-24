@@ -1,0 +1,16 @@
+/* CSS for Circle avatars */
+
+.circle {
+	/* border: 2px solid #ccc; */
+	border-radius: 50%;
+	display: inline-block; /* this is important */
+	vertical-align: middle;
+	padding-right: .5em;
+	line-height: 1em;
+}
+
+.circle img {
+	border-radius: 50%;
+	height: 24px;
+	width: 24px;
+}
