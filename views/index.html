@@ -1,79 +1,154 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/base64fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/ana-majik.css">
-		<link rel="stylesheet" type="text/css" href="css/content.css">
-	</head>
-	<body>
-		<div id="back-layer">
-			<div id="red-bar"></div>
-		</div>
-		<div class="container">
-			<div class="logo">
-				<img src="images/horse_profile_colored.svg">
-				<span class="logo-text">AnaMajik</span>
-			</div>
-			<div class="nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Where to Buy</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="hero-unit">
-				<div class="hero-words">
-					<span class="line"><hr class="art-line surround">All<hr class="art-line surround"></span>
-					<span class="big-text">NATURAL</span>
-					<span class="small-text">horse care products</span>
-					<span><hr class="art-line bottom"></span>
-				</div>
-			</div>
-		</div>
-		<div class="container p-layer">
-			<div class="column-container">
-				<div class="col product border">
-					<h3>Crystal Wash<hr></h3>
-					<img src="images/crystal_wash.png">
-					<p>AnaMajik's Crystal Wash brings a new dimension to how you look at cooling down your horse. <a href="#" class="more">Read More</a></p>
-				</div>
-				<div class="col product border">
-					<h3>Hoof Butter<hr></h3>
-					<img src="images/hoofbutter_small.png">
-					<p>All-around protection for healthy hooves. Absorbs quickly for an immediate (and long lasting) shine. <a href="#" class="more">Read More</a></p>				
-				</div>
-				<div class="col product">
-					<h3>Liniment<hr></h3>
-					<img src="images/liniment_small.png">
-					<p>Relief for temporary muscle stiffness and soreness. Works with the horse's body to provide a natural fix. <a href="#" class="more">Read More</a></p>				
-				</div>
-			</div>
-		</div>
-		<div class="container footer">
-			<div class="column-container">
-				<div class="col footer-col border">
-					<h6>See what we are up to:</h6>
-					<a class="twitter" href="#">Twitter</a>
-					<a class="facebook" href="#">Facebook</a>
-				</div>
-				<div class="col footer-col border">
-					<ul class="footer-nav">
-						<li>Home</li>
-						<li>Products</li>
-						<li>Where to Buy</li>
-						<li>FAQs</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div class="col footer-col">
-					<span class="footer-logo">AnaMajik</span>
-					<span>info@anamajik.com</span>
-					<span class="small">&copy;2011 Ana Majik</span>
-					<span class="small">All ingredients are approved for use during USEF Competition</span>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+  <!-- origin of this is http://bruceackerman.com/paypal-redesign/ -->
+  <head>
+  	<title>PayPal Remake</title>
+	<script>
+		/* this is for LiveReload */
+		/heroku/.test(location.host)) || document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/paypal-remake.css" />
+	<link rel="stylesheet" type="text/css" href="css/circle-avatar.css" />
+   </head>
+  <body>
+  	<div class="navy-blue-backdrop banner">
+	  	<div class="nav">
+	  		<div class="logo">PayPal</div>
+	  		<div class="search"><input type="text" placeholder="Search for a transaction"/></div>
+	  		<div class="tools">
+	  			<span class="tool-unit"><img class="notification-icon" src="images/bell.png" /></span>
+	  			<span class="tool-unit"><a href="#">Help</a></span>
+	  			<span class="tool-unit last-tool">
+	  				<span class="user-avatar-icon"></span>
+	  				<span class="drop-down-text"><a class="circle" href="#"><img src="images/avatar.jpg" /></a><a href="#"> My Account</a></span>
+	  			</span>
+	  		</div>
+	  	</div>
+	  	<div class="dashboard-top">
+	  		<div class="balance-widget dashboard-widget">
+	  			<label>Balance</label>
+	  			<span class="big-amount">
+	  				<span class="currency-symbol">$</span>
+	  				5,482.23
+	  			</span>
+	  		</div>
+	  		<div class="tip-widget dashboard-widget">
+	  			<label>Money saving tip</label>
+	  			<p>How many times do you bring a lunch and/or make dinner after work? Probably less than half the week. Studies show you can save up to $3,500 a year if you purchase groceries. <a href="#">Read more.</a></p>
+	  		</div>
+	  		<div class="clear"></div>
+	  	</div>
+  	</div>
+
+  	<div class="dark-blue-backdrop banner">
+	  	<div class="action-nav">
+	  		<a href="#" class="send-money-action action-link">Send Money</a>
+	  		<a href="#" class="request-money-action action-link">Request Money</a>
+	  		<a href="#" class="withdraw-money-action action-link">Withdraw Money</a>
+	  		<a href="#" class="products-services-action action-link">Products &amp; Services</a>
+	  	</div>
+	  	<div class="clear"></div>
+	</div>
+	<div class="white-backdrop banner">
+	  	<div class="main">
+	  		<div class="activity-column">
+	  			<div>
+		  			<h1>Activity</h1>
+		  			<div class="right-floating date-widget">
+		  				Between: <input class="calendar-widget" type="text" name="start-date" value="08/01/2013" /> to <input class="calendar-widget" type="text" name="end-date" value="08/07/2013"/>
+		  			</div>
+	  			</div>
+
+	  			<div class="clear"></div>
+	  			<table class="activity-table">
+	  				<thead>
+	  					<tr>
+	  						<th>Date</th>
+	  						<th>Type</th>
+	  						<th>Name/Email</th>
+	  						<th class="center-align">Status</th>
+	  						<th>Detail</th>
+	  						<th>Order Status/Actions</th>
+	  						<th>Gross</th>
+	  					</tr>
+	  				</thead>
+	  				<tbody>
+	  					<tr>
+	  						<td>Aug 5, 2013</td>
+	  						<td>Payment From</td>
+	  						<td>Bruce C Ackerman II</td>
+	  						<td><img class="status-icon" src="images/check.png" /></td>
+	  						<td><a href="#">View</a></td>
+	  						<td></td>
+	  						<td><span class="positive-currency">$50.00</span>
+	  					</tr>
+	  					<tr>
+	  						<td>Aug 5, 2013</td>
+	  						<td>Payment To</td>
+	  						<td>Macy's Shipping</td>
+	  						<td><img class="status-icon" src="images/check.png" /></td>
+	  						<td><a href="#">View</a></td>
+	  						<td></td>
+	  						<td><span class="negative-currency">$24.50</span>
+	  					</tr>
+	  					<tr>
+	  						<td>Aug 5, 2013</td>
+	  						<td>Payment From</td>
+	  						<td>Jon Smithers</td>
+	  						<td><img class="status-icon" src="images/cross.png" /></span></td>
+	  						<td><a href="#">View</a></td>
+	  						<td><a href="#">Print Shipping Label</a></td>
+	  						<td><span class="positive-currency">$153.23</span>
+	  					</tr>
+	  					<tr>
+	  						<td>Aug 5, 2013</td>
+	  						<td>Payment From</td>
+	  						<td>Kelly Kimbel</td>
+	  						<td><img class="status-icon" src="images/check.png" /></td>
+	  						<td><a href="#">View</a></td>
+	  						<td></td>
+	  						<td><span class="positive-currency">$194.00</span>
+	  					</tr>	  					
+	  				</tbody>
+	  			</table>
+	  		</div>
+	  		<div class="navigation-column">
+	  			<div class="links account-tools-links">
+	  				<h2>My account tools</h2>
+	  				<ul>
+	  					<li><a href="#">My Business Setup</a></li>
+	  					<li><a href="#">PayPal Mobile</a></li>
+	  					<li><a href="#">Manage Users</a></li>
+	  				</ul>
+	  			</div>
+	  			<div class="links question-links">
+	  				<h2>Have a question?</h2>
+	  				<p>We're here to help. <a href="#">Contact us</a></p>
+	  			</div>
+	  			<div class="links follow-us-links">
+	  				<h2>Follow us</h2>
+	  				<ul>
+	  					<li><a href="#">Facebook</a></li>
+	  					<li><a href="#">Twitter</a></li>
+	  					<li><a href="#">Instagram</a></li>
+	  				</ul>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="footer">
+	  		<ul>
+	  			<li><a href="#">About Us</a></li>
+	  			<li><a href="#">Contact Us</a></li>
+	  			<li><a href="#">Legal Agreements</a></li>
+	  			<li><a href="#">Privacy</a></li>
+	  			<li><a href="#">Fees</a></li>
+	  			<li><a href="#">Site Feedback</a></li>
+	  		</ul>
+	  		<p class="copyright-notice">
+	  			Copyright &copy; 1999-2013 PayPal. All rights reserved.
+	  		</p>
+	  	</div>
+	</div>
+
+  </body>
+ </html>
