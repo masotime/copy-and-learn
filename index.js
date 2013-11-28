@@ -13,8 +13,15 @@ app.use(express.static('public'));
 
 
 // routes
-app.get(/^\/(|index|index\.html)$/, function(req, res) {
-	res.render('index.html');
+app.get('/:template([^\.]+)?', function(req, res) {
+	var view = req.params.template;
+
+	if (view === undefined) {
+		view = 'index';	
+	} 
+
+	console.log('GET ' + view +'.html');
+	res.render(view+'.html');
 });
 
 // finally
